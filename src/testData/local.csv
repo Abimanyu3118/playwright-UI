@@ -1,0 +1,2 @@
+testCaseId, scenarioId, username, password, homePageWelcomeName
+TC01, SC01, john, demo, John Smith
