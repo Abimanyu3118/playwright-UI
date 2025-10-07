@@ -1,0 +1,9 @@
+{
+    "Login":
+    {
+        "userName": "input[name='username']",
+        "password": "input[name='password']",
+        "loginButton": "input[type='submit'][value='Log In']",
+        "welcomeMessage": "p.smallText"
+    }
+}
