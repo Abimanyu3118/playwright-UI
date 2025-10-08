@@ -4,3 +4,7 @@ playwright-report/
 /blob-report/
 /playwright/.cache/
 .DS_Store
+**/*-darwin.png
+**/*-linux.png
+**/*-win32.png
+**/test-results
