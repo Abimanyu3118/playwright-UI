@@ -9,7 +9,8 @@
     "test:ui": "playwright test --ui",
     "test:debug": "playwright test --debug",
     "test:login": "playwright test src/tests/loginPage.spec.ts",
-    "test:login:headed": "playwright test src/tests/loginPage.spec.ts --headed"
+    "test:login:headed": "playwright test src/tests/loginPage.spec.ts --headed",
+    "test:update-snapshots": "playwright test src/tests/loginPage.spec.ts --update-snapshots"
   },
   "repository": {
     "type": "git",
