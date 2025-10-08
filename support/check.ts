@@ -98,3 +98,21 @@ export async function expectElementToHaveClass(page: Page, selector: string, cla
     const element = page.locator(selector);
     await expect(element).toHaveClass(className);
 }
+
+/**
+ * Compare current page screenshot with baseline
+ * @param page - Playwright page object
+ * @param snapshotName - Name for the screenshot (will be used as filename)
+ * @param options - Optional screenshot options
+ */
+export async function imageComparison(
+    page: Page, 
+    snapshotName: string, 
+    options: { fullPage?: boolean; timeout?: number } = {}
+): Promise<void> {
+    await expect(page).toHaveScreenshot(snapshotName + '.png', {
+        fullPage: options.fullPage ?? true,
+        timeout: options.timeout ?? 30000,
+        maxDiffPixelRatio: 0.1
+    });
+}
