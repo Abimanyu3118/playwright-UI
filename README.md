@@ -1,5 +1,5 @@
 # playwright-UI
-Playwright automation to test web applications
+Playwright enables reliable end-to-end testing for modern web apps.
 
 ## Prerequisites
 
