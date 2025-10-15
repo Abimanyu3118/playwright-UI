@@ -8,7 +8,7 @@
     "test:headed": "playwright test --headed",
     "test:ui": "playwright test --ui",
     "test:debug": "playwright test --debug",
-    "test:login": "playwright test src/tests/loginPage.spec.ts",
+    "test:all": "playwright test src/tests/*.spec.ts",
     "test:login:headed": "playwright test src/tests/loginPage.spec.ts --headed",
     "test:update-snapshots": "playwright test src/tests/loginPage.spec.ts --update-snapshots"
   },
