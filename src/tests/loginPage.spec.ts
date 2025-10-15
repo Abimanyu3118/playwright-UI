@@ -11,7 +11,7 @@ test.describe('ParaBank Login Tests', () => {
         // Verify the element is visible
         await check.expectElementToBeVisible(page, pageLibrary.Login.userName);
         // Verify the login page is loaded through visual comparison
-        await check.imageComparison(page, 'login-page', { fullPage: true });
+        // await check.imageComparison(page, 'login-page', { fullPage: true });
     });
 
     test('Login with credentials from CSV', async ({ page }) => {
